@@ -1,0 +1,10 @@
+echo "Jenkins downloading steps are given below"
+# download and Install  jenkins
+echo "In future this link may be changed , will upadate it"
+yum install https://pkg.jenkins.io/redhat-stable/jenkins-2.138.3-1.1.noarch.rpm -y
+
+systemctl start jenkins
+systemctl enable jenkins
+
+systemctl stop firewalld
+systemctl disable firewalld

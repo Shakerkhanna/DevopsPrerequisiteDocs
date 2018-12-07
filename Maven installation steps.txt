@@ -1,0 +1,8 @@
+echo "Maven installation steps on centos 7"
+
+yum install epel* -y
+yum install maven* -y
+
+#checking Maven version"
+
+mvn -version
